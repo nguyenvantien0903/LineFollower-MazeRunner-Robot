@@ -1,7 +1,7 @@
 // C++ code
 //
 /*
-  This program make the hand-clock of the Arduino (the
+  This program make the hand clock of the Arduino (the
   built-in LED)
 */
 
@@ -140,7 +140,7 @@ void updateTime(){
 }
 
 void delayStillCount(int time){
-  smalltime+=1.0*time/900;//change this
+  smalltime+=1.0*time/850;//change this
   if(smalltime>=1){
     updateTime();
     giay++;
@@ -197,7 +197,10 @@ void aaa(int time){
 
 void loop()
 {
-  aaa(900);
+  aaa(850);
+  if(gio==setgio&&phut==setphut&&giay==setgiay){
+  	Serial.print("fuck u");
+  }
   if(cnt%4==0){
   	mode1();
   }
