@@ -1,7 +1,7 @@
 // C++ code
 //
 /*
-  This program blinks pin 13 of the Arduino (the
+  This program make the hand-clock of the Arduino (the
   built-in LED)
 */
 
